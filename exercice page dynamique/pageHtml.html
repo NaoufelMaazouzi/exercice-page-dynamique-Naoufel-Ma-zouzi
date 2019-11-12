@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page dynamique</title>
+       <meta charset="UTF-8">
+       <link rel="stylesheet" href="css/cssPage.css">
+       <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    </head>
+<body>
+<!-- ICI EST LA SIDENAV (MENU GAUCHE) QUI VA S'AFFICHER SUR LA PAGE -->
+    <div id="monMenuGauche" class="menuGauche">
+        <a href="#" class="boutonFerme" onclick="closeNav()">&times;</a>
+        <a href="#">A propos</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- ICI EST LA NAVBAR -->
+    <div id="main">
+        <nav id="navbar">
+            <div id="flexDiv">
+                <span onclick="openNav()" id="lienMenu">&#9776; Menu</span>
+                <div id="divLogo">
+                    <img src="img/mcdo.png" id="logo">
+                </div>
+                <!-- ICI EST LE DROPDOWN BOUTON -->
+                <div class="dropdown">
+                    <button onclick="fonctionDropdown()" id="bouton">Mon espace</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#connexion" id="connexion">Connexion</a>
+                        <a href="#inscription" id="inscription">Inscription</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- ICI EST LA 1ERE SECTION -->
+    <section class="section">
+        <div id="flexTitre">
+            <h1 id="titreSection"></h1>
+        </div>
+    </section>
+    <!-- ICI EST LA 2EME SECTION -->
+    <section class="section">
+        <div id="flexTitre2">
+            <h1 id="titreSection2">Notre Burger</h1>
+            <h2 id="sousTitre">MAGNIFIQUE</h2>
+            <img src="img/burger.png" id="imgApparaitre">
+        </div>
+    </section>
+    <!-- ICI EST LA 3EME SECTION -->
+    <section class="section">
+        <div id="flexTitre3">
+            <h1 id="titreSection3">Voici comment dire bonjour dans plusieurs langues: <span id="changing">Bonjour</span></h1>
+        </div>
+    </section>
+
+        <script src="js/jsPage.js"></script>
+    </body>
+</html>
